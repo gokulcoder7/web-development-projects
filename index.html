@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>  
+	
+		<nav>
+  <ul>
+    <li><a href="index-FINISHED.html">clock</a></li>
+    <li><a href="headphone.html"> headphone</a></li>
+    <li><a href="#">Links</a></li>
+  </ul>
+</nav>
+<hr>
+	<br>
+	<br>
+	<br>
+	<br>	
+	<br>	
+	<br>
+	<br>
+		<br>
+	<br>
+	<br>
+	<br>	
+	<br>	
+	<br>
+	<br>
+	
+<body>
+  <div class="calculator">
+    <input type="text" id="display"  />
+    <div class="buttons">
+      <button onclick="clearDisplay()">Clear (innerText)</button>   
+      <button onclick="appendToDisplay('(')">(</button>
+      <button onclick="appendToDisplay(')')">)</button>
+      <button onclick="appendToDisplay('/')">÷</button>
+
+      <button onclick="appendToDisplay('7')">7</button>
+      <button onclick="appendToDisplay('8')">8</button>
+      <button onclick="appendToDisplay('9')">9</button>
+      <button onclick="appendToDisplay('*')">×</button>
+
+      <button onclick="appendToDisplay('4')">4</button>
+      <button onclick="appendToDisplay('5')">5</button>
+      <button onclick="appendToDisplay('6')">6</button>
+      <button onclick="appendToDisplay('-')">−</button>
+ <button onclick="pop()">pop</button>
+      <button onclick="appendToDisplay('1')">1</button>
+      <button onclick="appendToDisplay('2')">2</button>
+      <button onclick="appendToDisplay('3')">3</button>
+      <button onclick="appendToDisplay('+')">+</button>
+
+      <button onclick="appendToDisplay('0')">0</button>
+      <button onclick="appendToDisplay('.')">.</button>
+      <button onclick="calculateResult()">=</button>
+    </div>
+  </div>
+	<br>
+	<br>
+	<br>
+	<br>	
+	<br>	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>	
+	<br>	
+	<br>
+	<br>
+  <h2>Forms</h2>
+
+<form onsubmit="saveFormData(event)">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" required><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" required><br><br>
+  <input type="submit" value="Submit">
+</form>
+	
+	<br>
+	<br>
+	<br>
+	<br>	
+	<br>	
+	<br>
+	<br>
+	
+	
+<!-- <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>  -->
+
+  <script src="script.js"></script>
+</body>
+
+
+
+</html>
