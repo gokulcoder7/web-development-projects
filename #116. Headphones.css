@@ -1,0 +1,38 @@
+
+
+<div id="top"></div>
+<div id="right"></div>
+<div id="left"></div>
+<style>
+
+  body{
+
+    background:#293D7E;
+    display:grid;
+    place-content:center;
+  }
+  #top{
+    width: 130px;
+    height: 100px;
+    
+    border:20px solid #6E91CA;
+    border-bottom:none;
+    border-radius:85px 85px 0px 0px;
+    grid-column:span 2;
+    
+  }
+#left, #right{
+    width: 60px;
+    height: 80px;
+    background:#6E91CA;
+    border-radius:0px 20px 30px 30px;
+   bottom-margin:10px;
+  }
+  #left{
+   border-radius:20px 0px 30px 30px;
+    justify-self:end;
+
+
+    
+  }
+</style>
